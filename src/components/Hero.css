@@ -1,0 +1,136 @@
+.container{
+     position:relative;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     gap:50px;
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-top: 6rem;
+     margin-bottom: 10rem;
+     
+}
+
+.content{
+     display: flex;
+     
+     flex-direction: column;
+     align-items: center;
+     
+}
+
+.hero-image{
+     width: 250px;
+     height:250px;
+     border-radius: 50%;
+
+     -webkit-animation-name: floating;
+
+             animation-name: floating;
+     -webkit-animation-duration: 3s;
+             animation-duration: 3s;
+     -webkit-animation-iteration-count: infinite;
+             animation-iteration-count: infinite;
+     -webkit-animation-timing-function: ease-in-out;
+             animation-timing-function: ease-in-out;
+}
+
+.title-2{
+     color:var(--Black);
+     font-size: 50px;
+}
+
+.desc{
+     color:var(--Light-Black);
+     font-weight: 500;
+}
+
+.btn-container{
+     display: flex;
+     gap: 10px;
+     margin-top: 15px;
+}
+.btn-container a {
+     text-decoration:none;
+}
+.btn{
+     padding:12px 20px;
+     border:none;
+     border-radius: 20px;
+    
+     font-size: 12px;
+     font-weight: 500;
+}
+.btn-color-1{
+    border:2px solid var(--Light-Black);
+    color:var(--Light-Black);
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+.btn-color-2{
+     color:white;
+     background-color: var(--Light-Black);
+     transition: 0.5s ease-in-out;
+}
+.btn-color-1:hover{
+     color:white;
+     background-color: var(--Light-Black);
+     cursor: pointer;
+}
+.btn-color-2:hover{
+     outline:2px solid var(--Light-Black);
+     padding:10px 20px;
+     color:var(--Light-Black);
+     background-color: white;
+     cursor:pointer;
+
+}
+
+.socials{
+     display:flex;
+     gap:10px;
+     margin-top: 15px;
+}
+.socials-link{
+     width: 30px;
+     height:30px;
+}
+
+
+
+
+
+@-webkit-keyframes floating{
+     0%{
+          transform: translate(0, 0px);
+     }
+     50%{
+          transform: translate(0, 1px);
+     }
+     100%{
+          transform: translate(0, -1px);
+     }
+}
+
+
+
+@keyframes floating{
+     0%{
+          transform: translate(0, 0px);
+     }
+     50%{
+          transform: translate(0, 1px);
+     }
+     100%{
+          transform: translate(0, -1px);
+     }
+}
+
+
+
+@media screen and (max-width:600px){
+     .container{
+          flex-direction: column;
+          margin-top: 4rem;
+     }
+}

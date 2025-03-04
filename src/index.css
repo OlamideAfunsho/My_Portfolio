@@ -1,0 +1,12 @@
+:root{
+  --Black: #000000;
+  --Light-Black: #4d4d4d;
+  --Gray: #b3b3b3;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}

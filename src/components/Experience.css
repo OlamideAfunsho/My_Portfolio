@@ -1,0 +1,132 @@
+#experience{
+     position:relative;
+     padding-top: 2rem;
+     height: 100vh;
+     margin-left: 10%;
+     margin-right: 10%;
+}
+
+
+
+.exp-con{
+     display:flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-top: 4rem;
+}
+
+.col{
+     height:300px;
+     width:500px;
+     /* border:1px solid var(--Gray); */
+     border-radius: 30px;
+     padding: 1.5rem 3rem;
+     box-shadow: 0 0 4px 0 var(--Gray);
+}
+.col h1{
+     text-align: center;
+     color: var(--Light-Black);
+     margin-bottom: 1.5rem;
+}
+.flex-con{
+     display:flex;
+     flex-direction: row;  
+     justify-content: space-between; 
+     
+     
+}
+
+.inner-con{
+     display:flex;
+     margin-bottom: 30px;
+}
+.inner-con div{
+     display:flex;
+     flex-direction: column;
+     gap:5px;
+}
+
+.check-mark{
+     height:40px;
+     width: 40px;
+     border-radius: 50%;
+     margin-right: 10px;
+}
+
+.lang{
+     color:var(--Black);
+     font-weight: 700;
+}
+.level{
+     font-size: 14px;
+     color:var(--Light-Black);
+}
+
+
+
+@media screen and (max-width:1000px) {
+     
+    
+     /* .col h1{
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+     } */
+
+     .exp-con{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          gap:15px;
+     }
+}
+
+@media screen and (max-width:550px){
+     .col{
+          width:100%;
+     }
+}
+@media screen and (max-width:460px){
+     #experience{
+          margin-bottom:23rem;
+     }
+     .col{
+          height:320px;
+          padding: 1.5rem 1rem;
+     }
+     .col h1{
+          font-size: 1.5rem;
+     }
+}
+@media screen and (max-width:420px){
+     .col{
+          padding: 1.5rem 1rem;
+     }
+     .check-mark{
+          margin-right: 5px;
+     }
+}
+@media screen and (max-width: 400px){
+     #experience{
+          margin-bottom:20rem;
+     }
+     .col{
+          height:300px;
+          padding-left: 0.5rem;
+     }
+     .col h1{
+          font-size:1rem;
+     }
+     .lang{
+          font-size: 14px;
+     }
+     .level{
+          
+          font-size: 12px;
+     }
+     
+}
+/* @media screen and (max-width: 350px){
+     .col{
+          padding: 1.5rem 1rem;
+     }
+} */

@@ -1,0 +1,86 @@
+.navbar{
+     position: relative;
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+     z-index:2;
+     margin:0 10%;
+     padding:40px 0;
+}
+
+.title{
+     font-size: 20px;
+     font-weight: 600;
+     text-decoration: none;
+     color:var(--Black);
+}
+
+.menu{
+     display:flex;
+
+}
+.hamburger-menu{
+     display: none;
+}
+.menuItems{
+     display:flex;
+     gap:30px;
+     list-style: none;
+}
+
+.nav-link{
+     color:var(--Black);
+     font-weight: 500;
+     transition: 0.5s ease;
+}
+.nav-link:hover{
+     cursor:pointer;
+     color:var(--Gray) ;
+}
+
+
+
+@media screen and (max-width:800px){
+     .navbar{
+          flex-direction: column;
+          align-items: flex-start;
+          
+     }
+     .menu{
+          position:absolute;
+          right:0;
+          
+          flex-direction: column;
+          align-items: flex-end;
+          gap:11px;
+          z-index:3;
+          background-color: white;
+          border-bottom-left-radius: 10px;
+     }
+     .hamburger-menu{
+          display:block;
+          cursor:pointer;
+          margin-top: 5px;
+          
+     }
+     .menuItems{
+          display:none;
+          flex-direction: column;
+          align-items: center;
+          gap:13px;
+          border-radius: 10px;
+          padding:25px 35px;
+          box-shadow: 0 0 4px 0 var(--Gray);
+          
+          
+     }
+     .menuOpen{
+          display:flex;
+          z-index: 1;
+     }
+     .hamburger-menu, .close-icon {
+          -webkit-filter: brightness(0);
+                  filter: brightness(0); /* Example: makes the icon black */
+        }
+        
+}
